@@ -1,0 +1,17 @@
+.container {
+    border: 2px solid gray;
+    width: 700px;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.weather{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
