@@ -15,3 +15,7 @@
     display: flex;
     flex-direction: column;
 }
+.weather-icon{
+    width: 60px;
+    height: 60px;
+}

@@ -3,6 +3,7 @@ import useCity from "../Hooks/City";
 import {weatherApi} from "../../weatherApi/index";
 import './weather.css'
 
+
 const Weather = () => {
     const [check, setCheck] = useState(false);
     const [tempStatus, setTempStatus] = useState(false);
@@ -73,7 +74,7 @@ const Weather = () => {
                         <p>City:{infoDay.name }</p>
                         <p>Temperature:{Math.floor(temp) } {tempStatus?'F':'C'}</p>
                         <p>Description:{infoDay.description}</p>
-                        <p>Icon:<img src={`../../Images-icon/${infoDay.icon}.png`}/>{infoDay.icon}</p>
+                        <p><span>Icon:</span><span><img className='weather-icon' src={`${process.env.PUBLIC_URL}/Images-icon/${infoDay.icon}.png`}/></span></p>
                     </div>
                     <label>
                         <input className={'checkboxStatus'} checked={tempStatus}  type="checkbox" onChange={handleChange}/>
@@ -88,4 +89,4 @@ const Weather = () => {
     );
 };
 
-export default Weather;
+export default  Weather;
