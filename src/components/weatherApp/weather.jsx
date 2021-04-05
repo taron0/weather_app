@@ -64,7 +64,7 @@ const Weather = () => {
         }
         return setTempStatus(!tempStatus)
     }
-//asa
+
     return (
         <div className={'container'}>
             {!loading ?
