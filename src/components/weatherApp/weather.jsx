@@ -7,7 +7,7 @@ import './weather.css'
 const Weather = () => {
     const [check, setCheck] = useState(false);
     const [tempStatus, setTempStatus] = useState(false);
-    const  [temp , setTemp] = useState()
+    const  [temp , setTemp] = useState();
     const [infoDay, setInfoDay] = useState(null);
     const [loading,setLoading] = useState(true)
     const city = useCity();
